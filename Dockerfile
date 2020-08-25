@@ -1,5 +1,6 @@
 FROM nginx:latest
 
-RUN yum update -y
+RUN apt-get update -y \
+    apt-get upgrade -y
 
 CMD [ "ps", "-aux" ]
