@@ -1,4 +1,3 @@
 FROM nginx:latest
 
-ENTRYPOINT [ "ps" ]
-CMD [ "-aux" ]
+CMD [ "ps", "-aux" ]
